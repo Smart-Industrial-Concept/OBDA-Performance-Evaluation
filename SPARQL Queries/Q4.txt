@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+SELECT ?sensor ?time ?value
+WHERE {	
+  	?sensor a  sosa:Sensor.
+  	?sensor sosa:madeObservation ?obs.
+  	?obs sosa:hasSimpleResult ?value.
+    ?obs sosa:resultTime ?time.
+  	Filter( ?value > 99.5)
+}

@@ -1,0 +1,61 @@
+@prefix ns1: <http://sic.auto.tuwien.ac.at/mappings#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/ns/sosa/S0> ns1:hasMapping ns1:MappingS0 .
+
+<http://www.w3.org/ns/sosa/S1> ns1:hasMapping ns1:MappingS1 .
+
+<http://www.w3.org/ns/sosa/S2> ns1:hasMapping ns1:MappingS2 .
+
+<http://www.w3.org/ns/sosa/S3> ns1:hasMapping ns1:MappingS3 .
+
+<http://www.w3.org/ns/sosa/S4> ns1:hasMapping ns1:MappingS4 .
+
+<http://www.w3.org/ns/sosa/S5> ns1:hasMapping ns1:MappingS5 .
+
+<http://www.w3.org/ns/sosa/S6> ns1:hasMapping ns1:MappingS6 .
+
+<http://www.w3.org/ns/sosa/S7> ns1:hasMapping ns1:MappingS7 .
+
+<http://www.w3.org/ns/sosa/S8> ns1:hasMapping ns1:MappingS8 .
+
+<http://www.w3.org/ns/sosa/S9> ns1:hasMapping ns1:MappingS9 .
+
+ns1:MappingS0 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S0') ORDER BY \"time\" DESC " .
+
+ns1:MappingS1 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S1') ORDER BY \"time\" DESC " .
+
+ns1:MappingS2 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S2') ORDER BY \"time\" DESC " .
+
+ns1:MappingS3 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S3') ORDER BY \"time\" DESC " .
+
+ns1:MappingS4 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S4') ORDER BY \"time\" DESC " .
+
+ns1:MappingS5 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S5') ORDER BY \"time\" DESC " .
+
+ns1:MappingS6 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S6') ORDER BY \"time\" DESC " .
+
+ns1:MappingS7 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S7') ORDER BY \"time\" DESC " .
+
+ns1:MappingS8 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S8') ORDER BY \"time\" DESC " .
+
+ns1:MappingS9 ns1:hasDBConnection ns1:Connection1 ;
+    ns1:hasSQLString "Select \"time\", \"value\" FROM \"SensorData\" WHERE (\"sensorID\" = 'S9') ORDER BY \"time\" DESC " .
+
+ns1:Connection1 ns1:db "Sensors" ;
+    ns1:passw "docker" ;
+    ns1:url "localhost:5432" ;
+    ns1:user "postgres" .
+

@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?time ?value 
+WHERE {		
+  	sosa:S5 sosa:madeObservation ?obs.
+  	?obs sosa:hasSimpleResult ?value.
+    ?obs sosa:resultTime ?time
+  	Filter(?value >= 50 && ?time >= "2019-08-01T07:00:00"^^xsd:dateTime && ?time <= "2019-08-01T10:00:00"^^xsd:dateTime)
+}
+OrderBy ?time

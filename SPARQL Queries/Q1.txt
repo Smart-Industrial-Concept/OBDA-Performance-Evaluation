@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+SELECT ?time ?value
+WHERE {		
+  	sosa:S1 sosa:madeObservation ?obs.
+  	?obs sosa:hasSimpleResult ?value.
+    ?obs sosa:resultTime ?time
+}

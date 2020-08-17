@@ -1,2 +1,5 @@
-# OBDA-Performance-Evaluation
-Performance comparison of Custom Property Functions with Ontop framework for time series access
+# CustomPropertyOBDA
+ Ontology-Based Data Access on SQL Timeseries
+
+tests run on sic.auto
+python virtual environment with the name "pt" has to be activated: 'source activate pt'

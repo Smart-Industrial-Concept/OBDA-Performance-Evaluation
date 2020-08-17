@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX : <http://sic.auto.tuwien.ac.at/obda#>
+
+SELECT ?sensor ?time ?value
+WHERE {	
+  	sosa:S3 :getHistValues(?time ?value)
+  	Filter( ?value > 96.1)
+}

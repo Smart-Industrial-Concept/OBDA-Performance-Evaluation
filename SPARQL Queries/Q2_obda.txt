@@ -1,0 +1,8 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX : <http://sic.auto.tuwien.ac.at/obda#>
+
+SELECT  ?time ?value 
+WHERE {		
+  	sosa:S2 :getHistValues(?time ?value "2019-08-01T07:00:00" "2019-08-01T10:00:00")
+}
